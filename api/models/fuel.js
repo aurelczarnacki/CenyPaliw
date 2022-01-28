@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const weatherSchema = mongoose.Schema({
+const fuelSchema = mongoose.Schema({
     _id: mongoose.Types.ObjectId,
     Address: String,
     Name: String,
@@ -8,4 +8,4 @@ const weatherSchema = mongoose.Schema({
     Price95: Number
 })
 
-module.exports = mongoose.model("Weather", weatherSchema)
+module.exports = mongoose.model("Fuel", fuelSchema)
